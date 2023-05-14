@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Tajawal:wght@900&display=swap');
+
+:root{
+    --cor-primaria: #03dcf8;
+    --cor-secundaria: #262626;
+    --cor-terciaria: #CED8F5;
+    --cor-de-fundo: #000000;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background:var(--cor-de-fundo) ;
+    color: var(--cor-terciaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    align-items: center;
+}
+.link__cabecalho{
+    text-decoration: none;  
+    font-size: 1.5rem;
+    font-family: 'Tajawal', sans-serif; 
+    font-weight: 900;
+    padding: 0rem 1rem 0rem 0rem;
+    color: var(--cor-primaria);
+}
+
+.apresentacao__titulo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 900;
+    margin: 2% 2%;
+}
+.apresentacao{
+    margin: 2% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.apresentacao__sobremim{
+    margin: 8% 20% 5% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.apresentacao__paragrafos {
+    margin: 80px 0px 40px 2px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-left: 0.10rem;
+    
+}
+
+
+
+
+.apresentacao__titulo__destaque{
+    color: var(--cor-primaria)
+}
+
+.apresentacao__subtitulo{
+    display: block;
+    flex-direction: column;
+    color: var(--cor-primaria);
+    font-family: 'Tajawal', sans-serif;
+    font-size: 3rem;
+    
+}
+
+.apresentacao__topicos{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.apresentacao__paragrafos div{
+    background-color: var(--cor-secundaria);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    
+    
+}
+.apresentacao__paragrafos__paragrafos{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+    
+}
+
+.apresentacao__links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    border: 0.25rem solid var(--cor-primaria);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin: 1.25rem 60rem 0rem 6rem;
+    color:  var(--cor-primaria);
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: var(--cor-secundaria);
+    
+}
+.apresentacao__links__sobremim{
+    display: flex;
+    justify-content: center;
+    color:  var(--cor-primaria);
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: var(--cor-secundaria);
+    text-decoration: none;
+    border: 0.25rem solid var(--cor-primaria);
+    border-radius: 0.5rem;
+    padding: 1.25rem 1rem;
+    margin: 1rem 40rem 3rem 40rem;
+    text-align: center;
+    gap: 16px;
+
+    
+}
+
+.apresentacao__links:hover{
+    background-color: #0a0a0a;
+}
+.apresentacao__links__sobremim:hover{
+    background-color: #0a0a0a;
+}
+
+
+.apresentacao__imagens{
+    margin-top: 1% ;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row-reverse;  
+    
+}
+
+.rodape{
+    padding:1.5rem;
+    background-color: #03dcf8;
+    color: var(--cor-de-fundo);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+
+}
+@media (max-width:1200px){
+    .cabecalho__menu{
+        justify-content: center;
+
+        
+    }
+    
+    .apresentacao{
+        max-width: 90vw;
+        flex-direction: column;
+        
+    }
+    .apresentacao__sobremim{
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin:5%;
+    }
+    .apresentacao__paragrafos{
+        width: auto;
+        max-width: 90vw;
+        
+    }
+    
+    .apresentacao__paragrafos__paragrafos{
+        display: flex; 
+        flex-direction:column;
+        max-width: 90vw;
+    
+    }
+    .apresentacao__imagens{
+        width: 75%;
+    }
+    .apresentacao__imagens__sobremim{
+        width: 50%;
+        
+    }
+    .apresentacao__links{
+        width: 50%;
+    }
+    .apresentacao__links__sobremim{
+        width: 50%;
+        margin: 5% 22% 5% 22%;
+
+    }
+
+    *{
+        width: auto;
+    }
+}
